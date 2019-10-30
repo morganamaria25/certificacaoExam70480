@@ -5,11 +5,11 @@ Na pasta documentos consta as minhas anotações enquanto estou estudando. Abaix
 
 # Links
 * [w3schools](https://www.w3schools.com/html/html5_intro.asp)
-* [Para versionamento, utilizei o git. Em paralelo pude ler umas partes da documentação do git, comandos utilizados no dia a dia](https://git-scm.com/doc)
+* [Para versionamento, utilizei o git. Em paralelo pude ler umas partes da documentação do git, comandos utilizados no dia a dia.](https://git-scm.com/doc)
 
 
 # Skills measured
 
 ## Chapter 1 – Implement and manipulate document structures and objects
 * [Goal 1.1: Create the document structure](./chapter01/goal_1_1.html)
-* [Goal 1.2: Create the document structure](./chapter01/goal_1_2.html)
+* [Goal 1.2: Write code that interacts with UI controls](./chapter01/goal_1_2.html)
