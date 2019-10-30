@@ -12,3 +12,4 @@ Na pasta documentos consta as minhas anotações enquanto estou estudando. Abaix
 
 ## Chapter 1 – Implement and manipulate document structures and objects
 * [Goal 1.1: Create the document structure](./chapter01/goal_1_1.html)
+* [Goal 1.2: Create the document structure](./chapter01/goal_1_2.html)
