@@ -10,11 +10,11 @@ Na pasta **docs** consta as minhas anotações enquanto estou estudando. Abaixo,
 * [w3schools](https://www.w3schools.com/html/html5_intro.asp)
 
 # Simulados
-* [https://www.examtopics.com/exams/microsoft/70-480/view/]
-* [https://www.certification-questions.com/microsoft-dumps/70-480.html]
-(Pago) * [https://www.exam-labs.com/info/70-480] 
-(Pago) * [https://exam-hub.com/microsoft/70-480/] 
-(Pago) * [https://www.selftestengine.com/70-480.html] 
+* https://www.examtopics.com/exams/microsoft/70-480/view/
+* https://www.certification-questions.com/microsoft-dumps/70-480.html
+* (Pago) https://www.exam-labs.com/info/70-480
+* (Pago) https://exam-hub.com/microsoft/70-480/
+* (Pago) https://www.selftestengine.com/70-480.html
 
 
 ### Links de pesquisas referente a cada goal:
