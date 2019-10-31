@@ -47,6 +47,35 @@ Revisão do objetivo. -->
         </table>
         <input type="text" /><input type="submit" value="Submit" />
     </div>
+
+    <script>
+        // Esse código refere-se ao tempo de execução para executar seu 
+        //     código após o término do carregamento da janela.
+        //window.onload = function() {}
+
+        //Como os IDs devem ser únicos, o método getElementById é um método 
+        // muito útil para pegar apenas o elemento desejado. 
+        var element = document.getElementById("outerDiv");
+        alert(element.innerHTML);
+
+        //O método getElementsByTagName() retorna uma coleção de todos os elementos que contém 
+        // no documento com a tag especificada
+        window.onload = function() {
+                var paragraphs = document.getElementsByTagName("p");
+                alert(paragraphs.length);
+            }
+            //O método getElementsByClassName() também obtém todos os elementos do mesmo tipo, desde que tenha
+            // a classe especificada no HTML.
+        window.onload = function() {
+                var paragraphs = document.getElementsByClassName("subPara");
+                alert("Temos no total com a classe subPara: " + paragraphs.length);
+            }
+            //Para encontrar todas os elementos <p> de uma página, podemos usar desta forma
+        document.querySelectorAll("p");
+
+        //Para encontrar um elemento único com ID, podemos usar desta forma
+        document.querySelector("#outerDiv");
+    </script>
 </body>
 
 </html>
