@@ -29,7 +29,7 @@ Na pasta **docs** consta as minhas anotações enquanto estou estudando. Abaixo,
 
 **Goal 1.2 Escrever código que interaja com controles de UI**
 
-Adding or modifying HTML elements
+Adicionando ou modificando elementos HTML
 
 * [Métodos](https://tableless.com.br/entendendo-o-dom-document-object-model/)
 * [Métodos no w3Schools, matérial muito bom e bem parecido com o da apostila reforça com muito mais conteúdo](https://www.w3schools.com/jsref/dom_obj_document.asp)
