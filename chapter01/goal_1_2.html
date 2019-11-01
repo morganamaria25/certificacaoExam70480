@@ -15,6 +15,9 @@ Revisão do objetivo. -->
 
 <body>
     <div id="outerDiv">
+        <div id="divTeste">
+
+        </div>
         <p class="mainPara">Main Paragraph</p>
         <ul>
             <li>First List Item</li>
@@ -49,32 +52,99 @@ Revisão do objetivo. -->
     </div>
 
     <script>
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // PARA TESTAR OS SCRIPTS ABAIXO, RECOMENDO COMENTAR OS CÓDIGOS QUE NÃO DESEJA UTILIZAR
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
         // Esse código refere-se ao tempo de execução para executar seu 
-        //     código após o término do carregamento da janela.
-        //window.onload = function() {}
-
-        //Como os IDs devem ser únicos, o método getElementById é um método 
-        // muito útil para pegar apenas o elemento desejado. 
-        var element = document.getElementById("outerDiv");
-        alert(element.innerHTML);
-
-        //O método getElementsByTagName() retorna uma coleção de todos os elementos que contém 
-        // no documento com a tag especificada
+        // código após o término do carregamento da janela.
+        // window.onload = function() {}
         window.onload = function() {
-                var paragraphs = document.getElementsByTagName("p");
-                alert(paragraphs.length);
-            }
+            //Como os IDs devem ser únicos, o método getElementById é um método 
+            // muito útil para pegar apenas o elemento desejado. 
+            var element = document.getElementById("outerDiv");
+            alert(element.innerHTML);
+
+            //O método getElementsByTagName() retorna uma coleção de todos os elementos que contém 
+            // no documento com a tag especificada
+            var paragraphs = document.getElementsByTagName("p");
+            alert(paragraphs.length);
+
             //O método getElementsByClassName() também obtém todos os elementos do mesmo tipo, desde que tenha
             // a classe especificada no HTML.
-        window.onload = function() {
-                var paragraphs = document.getElementsByClassName("subPara");
-                alert("Temos no total com a classe subPara: " + paragraphs.length);
-            }
-            //Para encontrar todas os elementos <p> de uma página, podemos usar desta forma
-        document.querySelectorAll("p");
+            var paragraphs = document.getElementsByClassName("subPara");
+            alert("Temos no total com a classe subPara: " + paragraphs.length);
 
-        //Para encontrar um elemento único com ID, podemos usar desta forma
-        document.querySelector("#outerDiv");
+            //Para encontrar todas os elementos <p> de uma página, podemos usar desta forma
+            document.querySelectorAll("p");
+
+            //Para encontrar um elemento único com ID, podemos usar desta forma
+            document.querySelector("#outerDiv");
+
+
+            // O código abaixo não funciona porque ele é copilado assim:
+            // 1º O primeiro alert mostra corretamente a propriedade innerHTML do innerDiv, mas o código nunca atinge o segundo alerta. 
+            // 2º O método getElementById gera um erro porque o ID do elemento especificado não existe mais no documento.
+
+            var element = document.getElementById("innerDiv");
+            alert(element.innerHTML);
+            document.removeChild(element);
+            var afterRemove = document.getElementById("innerDiv");
+            alert(afterRemove);
+
+            // Esse código abaixo só criou o elemento <article> e guardou no DOM.
+            var element = document.createElement("article");
+            element.innerText = "My new <article> element";
+
+            // Este exemplo anexa um novo elemento <article> ao outerDiv. 
+            // Podemos observar que assim que o documento é carregado o <article> vai para o final do documento
+            // isso por que o nó é adicionado ao final da lista de filhos que o nó pai já contém.
+            var outerDiv = document.getElementById("outerDiv");
+            var element = document.createElement("article");
+            element.innerText = "My new <article> element (Vindo do javaScript)";
+            outerDiv.appendChild(element);
+
+            // Esse código abaixo funciona da mesma forma que o de cima, porém de forma reestruturada.
+            var element = document.getElementById("outerDiv").appendChild(document.createElement("article"));
+            element.innerText = "My new <article> element restructure (Vindo do javaScript)";
+
+            //Esse código insere seu novo <article> antes do elemento que for incluido na linha de código 
+            //  document.getElementById("divTeste")
+            // Para isso, criei no HTML uma div com id="divTeste".
+            // Este exemplo usa o método getElementById para obter uma referência ao nó 
+            // do qual você deseja inserir seu elemento <article> no DOM. 
+            var element = document.getElementById("outerDiv").insertBefore(
+                document.createElement("article"),
+                document.getElementById("divTeste")
+            );
+            element.innerText = "Inserindo um novo <article> antes do elemento innerDiv (Vindo do javaScript)";
+
+            // A propriedade firstChild, indica que eu vou inserir o elemento <article> 
+            // antes da div com id="innerDiv". 
+            var inner = document.getElementById("innerDiv");
+            var element = inner.insertBefore(document.createElement("article"), inner.firstChild);
+            element.innerText = "My new <article> element MORGANA";
+
+
+
+            // O método removeChild remove um nó filho do contêiner de chamada.
+            // Lembrando que, se não mantiver a referência retornada ao nó removido, 
+            // não há como adicionar o elemento novamente sem recriá-lo completamente. 
+            // O exemplo abaixo remove o primeiro elemento <p> do seu elemento innerDiv:
+            var innerDiv = document.getElementById("innerDiv");
+            var p = innerDiv.removeChild(document.getElementById("P1"));
+
+
+            // O removeNode, utiliza um parâmetro booleano. Definir o parâmetro como true 
+            // informa ao método para fazer uma remoção profunda, o que significa que todos os 
+            // filhos também são removidos. 
+            var removeNodeElement = function() {
+                var innerDiv = document.getElementById("innerDiv");
+                innerDiv.removeNode(true);
+            }
+
+        }
     </script>
 </body>
 
