@@ -21,20 +21,22 @@ Na pasta **docs** consta as minhas anotações enquanto estou estudando. Abaixo,
 
 ### Links de pesquisas referente a cada goal:
 
-**Goal 1.1 Create the document structure**
-* [Using HTML5 semantic markup](http://www.infocodify.com/html_dom/create_dom_structure)
-* [Creating a layout container in HTML](http://www.infocodify.com/html_dom/creating_layout_container)
-* [Optimizing for search engines ](https://danieldigital.com.br/blog/seo-tecnico-a-importancia-do-html5-semantico-para-melhorar-o-trafego-do-seu-site/)(conteúdo em português)
-* [Optimizing for screen readers](w3.org/WAI/perspective-videos/speech/)
+**Goal 1.1 Criar a estrutura do documento usando HTML**
+* [Usar marcação semântica HTML5](http://www.infocodify.com/html_dom/create_dom_structure)
+* [Criar um contêiner de layout em HTML](http://www.infocodify.com/html_dom/creating_layout_container)
+* [Otimizando para mecanismos de pesquisa](https://danieldigital.com.br/blog/seo-tecnico-a-importancia-do-html5-semantico-para-melhorar-o-trafego-do-seu-site/)(conteúdo em português)
+* [Otimizando para leitores de tela](w3.org/WAI/perspective-videos/speech/)
 
-**Goal 1.2 Write code that interacts with UI controls**
+**Goal 1.2 Escrever código que interaja com controles de UI**
+
 Adding or modifying HTML elements
+
 * [Métodos](https://tableless.com.br/entendendo-o-dom-document-object-model/)
 * [Métodos no w3Schools, matérial muito bom e bem parecido com o da apostila reforça com muito mais conteúdo](https://www.w3schools.com/jsref/dom_obj_document.asp)
 
 
-# Skills measured
+# Habilidades medidas
 
-## Chapter 1 – Implement and manipulate document structures and objects (20-25%)
-* [Goal 1.1: Create the document structure](./chapter01/goal_1_1.html)
-* [Goal 1.2: Write code that interacts with UI controls](./chapter01/goal_1_2.html)
+### Chapter 1 –  Implementar e manipular estruturas e objetos do documento (20-25%)
+* [Goal 1.1: Criar a estrutura do documento usando HTML](./chapter01/goal_1_1.html)
+* [Goal 1.2: Escrever código que interaja com controles de UI](./chapter01/goal_1_2.html)
