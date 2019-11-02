@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Objetivo 1.2: Escrever código que interaja com controles de UI
+Adicionar ou modificar elementos HTML;
+Implementar controles de mídia;
+Implementar gráficos com HTML5 <canvas> e SVG;
+Sumário do objetivo;
+Revisão do objetivo. -->
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exam 70-480</title>
+    <style>
+        img:hover {
+            cursor: pointer;
+        }
+        
+        h1 {
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <h1>
+                Usando o elemento &lt;video&gt;
+            </h1>
+        </thead>
+        <tr>
+            <td>
+                <video height="400" width="600" id="sampleVideo" poster="img/cacilhas-por-do-sol.jpg">
+                    <source src="./video/firework.webm" type="audio/webm" />
+                    <source src="./video/firework.mp4" type="audio/mp4" />
+                    <object>
+                        <p>Video is not supported by this browser.</p>
+                    </object>
+                </video>
+            </td>
+            <td>
+                <img id="backButton" src="./img/back.png" onclick="back();" /><br />
+                <img id="playButton" src="./img/play.png" onclick="play();" /><br />
+                <img id="pauseButton" src="./img/pause.png" onclick="pause();" /><br />
+            </td>
+        </tr>
+    </table>
+    <div>
+        <header>
+            <h1>
+                Usando o elemento &lt;audio&gt;
+            </h1>
+        </header>
+        <audio controls>
+                <source src="./video/ana_moura.mp3" type="audio/mp3"/>
+                <source src="./video/ana_moura.ogg" type="audio/ogg"/>
+                <p>Your browser does not support HTML5 audio.</p>
+        </audio>
+    </div>
+
+
+    <script>
+        // Inclusão de barra de controle de vídeo, via javaScript
+        var video;
+        window.onload = function() {
+            video = document.getElementById("sampleVideo");
+        }
+
+        function play() {
+            video.play();
+        }
+
+        function pause() {
+            video.pause();
+        }
+
+        function back() {
+            video.currentTime -= 10;
+        }
+    </script>
+</body>
+
+</html>
