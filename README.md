@@ -1,5 +1,6 @@
 # Notas de estudo para Certificação Exame 70-480
 Programming in HTML5 with JavaScript and CSS3
+
 (O mínimo necessário raramente é o suficiente. Em frente!)
 
 Na pasta **docs** consta as minhas anotações enquanto estou estudando. Abaixo, um breve resumo com links das pesquisas. 
@@ -21,7 +22,7 @@ Na pasta **docs** consta as minhas anotações enquanto estou estudando. Abaixo,
 * (Pago) https://www.selftestengine.com/70-480.html
 
 
-### Links de pesquisas referente a cada goal:
+# Links de pesquisas referente a cada goal:
 
 **Goal 1.1 Criar a estrutura do documento usando HTML**
 * [Usar marcação semântica HTML5](http://www.infocodify.com/html_dom/create_dom_structure)
@@ -34,7 +35,8 @@ Na pasta **docs** consta as minhas anotações enquanto estou estudando. Abaixo,
 Adicionando ou modificando elementos HTML
 * [Métodos](https://tableless.com.br/entendendo-o-dom-document-object-model/)
 * [Métodos no w3Schools, matérial muito bom e bem parecido com o da apostila reforça com muito mais conteúdo](https://www.w3schools.com/jsref/dom_obj_document.asp)
-
+* [Canvas, aqui explica melhor sobre o getContext e cada método e propriedade](https://www.w3schools.com/tags/ref_canvas.asp)
+* [Canvas, uma explicação melhor sobre arc e seus métodos](https://www.w3schools.com/tags/canvas_arc.asp)
 
 # Habilidades medidas
 
