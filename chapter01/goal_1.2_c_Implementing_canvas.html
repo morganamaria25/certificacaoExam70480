@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exam 70-480</title>
+
+    <style>
+        h1 {
+            font-size: 17px;
+        }
+        
+        div {
+            margin-top: 25px;
+        }
+        
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <hgroup>
+            <h1>Usando o elemento &lt;canvas&gt;</h1>
+        </hgroup>
+
+        <input type="submit" value="Criar linha" onclick="desenharLinha()" />
+        <canvas id="drawingSurface" width="100" height="100">
+        Your browser does not support HTML5.
+        </canvas>
+    </div>
+
+    <div>
+        <hgroup>
+            <h1>Desenhando linhas &lt;canvas&gt;</h1>
+        </hgroup>
+
+        <canvas id="testLine" width="500" height="300">
+        Your browser does not support HTML5.
+        </canvas>
+    </div>
+
+    <div>
+        <hgroup>
+            <h1>Desenhando curvas &lt;canvas&gt;</h1>
+        </hgroup>
+
+        <canvas id="testCurve" width="600" height="400">
+        Your browser does not support HTML5.
+        </canvas>
+    </div>
+
+
+
+    <script>
+        // Fiz desta forma onde a linha ela só é desenhada quando clica no botão "Criar linha".
+        // Para tornar o desenho visivel assim que carrega a página
+        // começa com o onload, igual o exemplo abaixo.
+        var desenharLinha = function() {
+                var drawingSurface = document.getElementById("drawingSurface");
+                var ctxt = drawingSurface.getContext("2d");
+
+                ctxt.beginPath();
+                ctxt.moveTo(5, 5);
+                ctxt.lineTo(50, 50);
+                ctxt.stroke();
+            }
+            //xxxxxxxxxxxxxxxxxxxxxxxxxx
+            // Desenhando linhas
+            //xxxxxxxxxxxxxxxxxxxxxxxxxx
+        window.onload = function() {
+
+            var testeLine = document.getElementById("testLine");
+            var ctxt = testeLine.getContext("2d");
+
+            ctxt.beginPath(); // Sempre inicia com este método
+            ctxt.moveTo(10, 10); //Move o contexto para o ponto definido no método beginPath
+            ctxt.lineTo(125, 250); //Define o ponto final de destino para a linha
+            ctxt.lineTo(300, 10); //Depois que define o ponto que a linha termina, pode criar outro lineTo para continuar desenhando mais linhas
+            ctxt.lineTo(400, 250); //Pode ser feito vários métodos lineTo
+            //Para alterar propriedades da linha, é precisso fazer isso antes
+            //do método stroke.
+            ctxt.lineWidth = 5; //Define a largura da linha
+            ctxt.strokeStyle = '#0f0'; //Define a cor da linha
+            ctxt.lineCap = "round"; //Vai tornar o começo e final da linha arredondado.
+            ctxt.stroke(); //Traça a linha, tornando-a visível
+
+
+            //xxxxxxxxxxxxxxxxxxxxxxxxxx
+            // Desenhando curvas
+            //xxxxxxxxxxxxxxxxxxxxxxxxxx
+            var testeCurva = document.getElementById("testCurve");
+            var ctx = testeCurva.getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(150, 100, 75, 0, 2 * Math.PI, false);
+            ctx.lineWidth = 25;
+            ctx.strokeStyle = '#0f0';
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(450, 100, 75, 1.5 * Math.PI, 2 * Math.PI, false);
+            ctx.lineWidth = 25;
+            ctx.strokeStyle = 'blue';
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(150, 300, 75, 1 * Math.PI, 1.5 * Math.PI, false);
+            ctx.lineWidth = 25;
+            ctx.strokeStyle = '#0ff';
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(450, 300, 75, .5 * Math.PI, 1 * Math.PI, false);
+            ctx.lineWidth = 25;
+            ctx.strokeStyle = '#f00';
+            ctx.stroke();
+        }
+    </script>
+
+
+</body>
+
+</html>
