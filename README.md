@@ -44,4 +44,5 @@ Adicionando ou modificando elementos HTML
 * [Goal 1.1: Criar a estrutura do documento usando HTML](./chapter01/goal_1_1.html)
 * [Goal 1.2: Escrever código que interaja com controles de UI](./chapter01/goal_1.2_a_adding_or_modifying_HTML_elements.html)
 * [Goal 1.2: Implementando controles de mídias](./chapter01/goal_1.2_b_implementing_media_controls.html)
-* [Goal 1.2: Implementando gráficos com HTML5 <canvas> e SVG](./chapter01/goal_1.2_c_Implementing_canvas_and_SVG.html)
+* [Goal 1.2: Implementando gráficos com HTML5 <canvas>](./chapter01/goal_1.2_c_Implementing_canvas.html)
+* [Goal 1.2: Implementando gráficos com HTML5 SVG](./chapter01/goal_1.2_d_Implementing_SVG.html)
