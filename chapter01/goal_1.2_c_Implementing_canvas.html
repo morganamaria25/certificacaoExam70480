@@ -25,7 +25,7 @@
         <hgroup>
             <h1>Usando o elemento &lt;canvas&gt;</h1>
         </hgroup>
-
+        <p>Mostrando desenho com o click.</p>
         <input type="submit" value="Criar linha" onclick="desenharLinha()" />
         <canvas id="drawingSurface" width="100" height="100">
         Your browser does not support HTML5.
@@ -51,7 +51,24 @@
         Your browser does not support HTML5.
         </canvas>
     </div>
+    <div>
+        <hgroup>
+            <h1>Método path e fill</h1>
+        </hgroup>
 
+        <canvas id="metPath" width="600" height="400">
+        Your browser does not support HTML5.
+        </canvas>
+    </div>
+    <div>
+        <hgroup>
+            <h1>Desenho com textos</h1>
+        </hgroup>
+
+        <canvas id="drawingText" width="600" height="400">
+        Your browser does not support HTML5.
+        </canvas>
+    </div>
 
 
     <script>
@@ -117,6 +134,54 @@
             ctx.lineWidth = 25;
             ctx.strokeStyle = '#f00';
             ctx.stroke();
+
+            //xxxxxxxxxxxxxxxxxxxxxxxxxx
+            // Método Path e fill
+            //xxxxxxxxxxxxxxxxxxxxxxxxxx
+            var metPath = document.getElementById("metPath");
+            var ctxP = metPath.getContext("2d");
+
+            ctxP.beginPath();
+            ctxP.arc(300, 200, 75, 1.75 * Math.PI, 1.25 * Math.PI, false);
+            ctxP.lineTo(150, 125);
+            ctxP.quadraticCurveTo(300, 0, 450, 125);
+            ctxP.lineTo(353, 144);
+            ctxP.strokeStyle = "blue";
+            ctxP.lineCap = "round";
+            ctxP.lineWidth = 10;
+            ctxP.fillStyle = "Green";
+            ctxP.fill();
+            ctxP.stroke();
+
+            //xxxxxxxxxxxxxxxxxxxxxxxxxx
+            // Desenho com texto
+            //xxxxxxxxxxxxxxxxxxxxxxxxxx
+            var drawingText = document.getElementById("drawingText");
+            var ctxtText1 = drawingText.getContext("2d");
+            var ctxtText2 = drawingText.getContext("2d");
+            var ctxtText3 = drawingText.getContext("2d");
+            var ctxtText4 = drawingText.getContext("2d");
+            var ctxtText5 = drawingText.getContext("2d");
+
+            ctxtText1.strokeText("1. Text with default font", 100, 100);
+
+            ctxtText2.font = "24px arial";
+            ctxtText2.strokeText("2. Text with altered font", 100, 125);
+
+            ctxtText3.font = "24px arial";
+            ctxtText3.strokeStyle = "Red";
+            ctxtText3.strokeText("3. Text with altered font", 100, 160);
+
+            ctxtText4.font = "24px arial";
+            ctxtText4.fillStyle = "Red";
+            ctxtText4.fillText("4. Text with altered colored font", 100, 185);
+
+            ctxtText5.font = "24px arial";
+            ctxtText5.textAlign = "center";
+            ctxtText5.fillStyle = "Red";
+            ctxtText5.fillText("5. Text with altered colored font Centered.", drawingSurface.width / 2,
+                drawingSurface.height / 2);
+
         }
     </script>
 
