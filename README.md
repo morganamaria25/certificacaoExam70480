@@ -46,3 +46,4 @@ Adicionando ou modificando elementos HTML
 * [Goal 1.2: Implementando controles de mídias](./chapter01/goal_1.2_b_implementing_media_controls.html)
 * [Goal 1.2: Implementando gráficos com HTML5 &lt;canvas&gt;](./chapter01/goal_1.2_c_Implementing_canvas.html)
 * [Goal 1.2: Implementando gráficos com HTML5 SVG](./chapter01/goal_1.2_d_Implementing_SVG.html)
+* [Goal 1.3: Aplicar estilo a elementos HTML programaticamente](./chapter01/goal_1.3.html)
