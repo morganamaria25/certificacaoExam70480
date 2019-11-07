@@ -4,10 +4,151 @@
 <head>
     <meta charset="utf-8" />
     <title>Exam 70-480</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-left: 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        img {
+            height: 150px;
+            width: 225px;
+        }
+        
+        table {
+            width: 95%;
+            height: 85%;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        
+        td {
+            vertical-align: top;
+            width: 80%
+        }
+        
+        section {
+            width: 33%;
+            float: left;
+        }
+        
+        section:last-child {
+            float: none;
+            width: 100%;
+        }
+        
+        .rotate {
+            transform: rotate(90deg);
+        }
+        
+        .translate {
+            transform: translate(50px, 0px);
+        }
+        
+        .skew {
+            transform: skew(10deg, 10deg);
+        }
+        
+        .scale {
+            transform: scale(1.5);
+        }
+    </style>
 </head>
 
 <body>
 
+    <h1>Posicionamento absoluto e relativo</h1>
+    <table>
+        <tr>
+            <td>
+                <img id="img1" src="./img/cacilhas.jpg" />
+                <img id="img2" src="./img/cacilhas-por-do-sol.jpg" />
+            </td>
+            <td style="vertical-align: top;">Left:
+                <input type="text" id="leftText" /><br/> Top:
+                <input type="text" id="topText" /><br/> Position:
+                <select id="positioning">
+                    <option>relative</option>
+                    <option>absolute</option>
+                </select><br/>
+                <input type="button" id="btnPosition" value="Update" />
+            </td>
+        </tr>
+    </table>
+    <div>
+        <h1>Para ver os efeitos, clique na imagem </h1>
+        <section>
+            <h2>Aplicando transform rotate</h2>
+            <img id="imgRot" src="./img/cristo-rei.jpg" style="position:relative" />
+        </section>
+        <section>
+            <h2>Aplicando transform translate</h2>
+            <img id="imgTranslate" src="./img/cacilhas.jpg" style="position:relative" />
+        </section>
+        <section>
+            <h2>Aplicando transform skew</h2>
+            <img id="imgSkew" src="./img/cristo-rei.jpg" style="position:relative" />
+        </section>
+        <section>
+            <h2>Aplicando transform scale</h2>
+            <img id="imgSemScale" src="./img/cristo-rei.jpg" />
+            <img id="imgScale" src="./img/cristo-rei.jpg" style="position:relative" />
+        </section>
+    </div>
+    <div>
+        <h1>Mostrando e escondendo elementos</h1>
+    </div>
+
+
+
+    <script>
+        window.onload = function() {
+            // Essa função utiliza o posicionamento absolute e relative
+            // Onde o usuário escolhe o posicionamento do elemento através do submit.
+            var top = document.getElementById("topText");
+            var left = document.getElementById("leftText");
+            var pos = document.getElementById("positioning");
+            document.getElementById("btnPosition").onclick = function() {
+                var img = document.getElementById("img2");
+                img.style.position = pos.value;
+                img.style.left = left.value + "px";
+                img.style.top = top.value + "px";
+            }
+
+            // Os exemplos abaixo foi adicionado uma class no CSS que chama no JS
+
+
+            // Essa função define o método rotate
+            document.getElementById("imgRot").onclick = function() {
+                this.classList.add("rotate");
+            }
+
+            //Essa função define o método translate
+            document.getElementById("imgTranslate").onclick = function() {
+                this.classList.add("translate");
+            }
+
+            //Essa função define o método skew
+            document.getElementById("imgSkew").onclick = function() {
+                this.classList.add("skew");
+            }
+
+            //Essa função define o método scale
+            documento.getElementById("imgScale").onclick = function() {
+                this.classList.add("scale");
+            }
+
+        }
+    </script>
 </body>
 
 </html>
