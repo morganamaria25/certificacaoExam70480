@@ -22,7 +22,7 @@ Na pasta **docs** consta as minhas anotações enquanto estou estudando. Abaixo,
 * (Pago) https://www.selftestengine.com/70-480.html
 
 
-# Links de pesquisas referente a cada goal:
+# Links de pesquisas referente a cada goal
 
 **Goal 1.1 Criar a estrutura do documento usando HTML**
 * [Usar marcação semântica HTML5](http://www.infocodify.com/html_dom/create_dom_structure)
@@ -37,6 +37,11 @@ Adicionando ou modificando elementos HTML
 * [Métodos no w3Schools, matérial muito bom e bem parecido com o da apostila reforça com muito mais conteúdo](https://www.w3schools.com/jsref/dom_obj_document.asp)
 * [Canvas, aqui explica melhor sobre o getContext e cada método e propriedade](https://www.w3schools.com/tags/ref_canvas.asp)
 * [Canvas, uma explicação melhor sobre arc e seus métodos](https://www.w3schools.com/tags/canvas_arc.asp)
+
+**Goal 1.3 Aplicar estilo a elementos HTML programaticamente**
+* [Tipo de posicionamento. Static, relative, fixed, absolute, sticky](https://www.w3schools.com/css/css_positioning.asp)
+* [Tipo de posicionamento. Esse material também é muito bom, é de fácil entendimento, boa didática.](https://www.devmedia.com.br/position-css-definindo-a-posicao-de-elementos-com-fixed-relative-e-absolute/37700)
+
 
 # Habilidades medidas
 
