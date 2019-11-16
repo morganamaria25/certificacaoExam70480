@@ -42,13 +42,19 @@ Adicionando ou modificando elementos HTML
 * [Tipo de posicionamento. Static, relative, fixed, absolute, sticky](https://www.w3schools.com/css/css_positioning.asp)
 * [Tipo de posicionamento. Esse material também é muito bom, é de fácil entendimento, boa didática.](https://www.devmedia.com.br/position-css-definindo-a-posicao-de-elementos-com-fixed-relative-e-absolute/37700)
 
+**Goal 1.4 Implementar APIs HTML5**
+* [Use a API de armazenamento](https://www.w3schools.com/jsref/met_storage_key.asp)
+Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é sobre AppCache](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Using_the_application_cache) , [esse link é sobre Service Workers](https://developer.mozilla.org/pt-BR/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+* [Use a API de localização geográfica]()
+
 
 # Habilidades medidas
 
-### Chapter 1 –  Implementar e manipular estruturas e objetos do documento (20-25%)
+### Capítulo 1 –  Implementar e manipular estruturas e objetos do documento (20-25%)
 * [Goal 1.1: Criar a estrutura do documento usando HTML](./chapter01/goal_1_1.html)
 * [Goal 1.2: Escrever código que interaja com controles de UI](./chapter01/goal_1.2_a_adding_or_modifying_HTML_elements.html)
 * [Goal 1.2: Implementando controles de mídias](./chapter01/goal_1.2_b_implementing_media_controls.html)
 * [Goal 1.2: Implementando gráficos com HTML5 &lt;canvas&gt;](./chapter01/goal_1.2_c_Implementing_canvas.html)
 * [Goal 1.2: Implementando gráficos com HTML5 SVG](./chapter01/goal_1.2_d_Implementing_SVG.html)
 * [Goal 1.3: Aplicar estilo a elementos HTML programaticamente](./chapter01/goal_1.3.html)
+* [Goal 1.4: Implementar APIs HTML5](./chapter01/goal_1.4.html)
