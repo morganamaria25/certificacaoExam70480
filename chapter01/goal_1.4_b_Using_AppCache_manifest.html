@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exam 70-480</title>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var appCache = window.applicationCache;
+            appCache.oncached = function(e) {
+                alert("cache successfully downloaded.");
+            };
+            appCache.onupdateready = function(e) {
+                appCache.swapCache();
+            };
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
