@@ -1,0 +1,31 @@
+﻿CACHE MANIFEST
+# My Web Application Cache MANIFEST
+# V.1.0
+
+# Explicitly cached 'master entries'.
+CACHE
+# A seção CACHE lista todos os recursos que devem ser armazenados em cache offline, 
+# incluindo todos os arquivos CSS, JPG, vídeo e áudio e  qualquer outro recurso 
+# necessário para que a página funcione corretamente.
+
+/chapter01/goal_1.4_b_Using_AppCache_manifest.html
+
+
+NETWORK:
+# A seção REDE declara quaisquer recursos que devem estar disponíveis na Internet. 
+# Esses itens NÃO PODEM ser armazenados em cache. Tudo o que a página exige da Internet 
+# deve ser listado aqui.
+# por exemplo
+
+login.html
+
+FALLBACK:
+# A seção FALLBACK permite que você forneça instruções de fallback ao navegador, 
+# caso um item não esteja disponível no cache e o navegador esteja no modo offline. 
+# Isso indica ao navegador que, se o navegador estiver offline e não puder acessar 
+# nada na pasta de recursos, ele deverá substituir as referências aos itens na pasta 
+# de recursos por resource.jpg.
+# Observe que resource.jpg é armazenado em cache porque é especificado na seção FALLBACK. 
+# Você não precisa especificar também resource.jpg na seção CACHE.
+
+/resources /resource.jpg

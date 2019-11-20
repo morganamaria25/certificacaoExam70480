@@ -22,7 +22,7 @@ Na pasta **docs** consta as minhas anotações enquanto estou estudando. Abaixo,
 * (Pago) https://www.selftestengine.com/70-480.html
 
 
-# Links de pesquisas referente a cada goal
+# Links úteis de pesquisas referente a cada goal
 
 **Goal 1.1 Criar a estrutura do documento usando HTML**
 * [Usar marcação semântica HTML5](http://www.infocodify.com/html_dom/create_dom_structure)
@@ -58,3 +58,4 @@ Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é 
 * [Goal 1.2: Implementando gráficos com HTML5 SVG](./chapter01/goal_1.2_d_Implementing_SVG.html)
 * [Goal 1.3: Aplicar estilo a elementos HTML programaticamente](./chapter01/goal_1.3.html)
 * [Goal 1.4: Implementar APIs HTML5](./chapter01/goal_1.4.html)
+* [Goal 1.4: Using AppCache Manifest](./chapter01/goal_1.4_b_Using_AppCache_manifest.html) e [Aqui é o arquivo de manifest](manifest.appcache)
