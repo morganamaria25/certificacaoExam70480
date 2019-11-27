@@ -45,7 +45,7 @@ Adicionando ou modificando elementos HTML
 **Goal 1.4 Implementar APIs HTML5**
 * [Use a API de armazenamento](https://www.w3schools.com/jsref/met_storage_key.asp)
 Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é sobre AppCache](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Using_the_application_cache) , [esse link é sobre Service Workers](https://developer.mozilla.org/pt-BR/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-* [Use a API de localização geográfica]()
+* [Use a API de localização geográfica](https://www.w3schools.com/html/html5_geolocation.asp)
 
 
 # Habilidades medidas
