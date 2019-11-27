@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exam 70-480</title>
+    <script>
+        window.onload = function() {
+                var geoLocator = window.navigator.geolocation;
+                var posOptions = {
+                    enableHighAccuracy: true,
+                    timeout: 45000
+                };
+                geoLocator.getCurrentPosition(successPosition, errorPosition,
+                    posOptions);
+            }
+            // Os métodos de retorno de chamada com êxito e erro 
+            // recebem um parâmetro da API de geolocalização. 
+
+        // O método success recebe um objeto position. (pos)
+        function successPosition(pos) {
+            alert(pos);
+        }
+
+        // Enquanto o método error recebe um objeto error. (err)
+        function errorPosition(err) {
+            alert(err);
+        }
+
+        // A propriedade coords é ela própria um objeto de coordenadas 
+        // que contém a latitude, longitude, altitude, rumo e velocidade da 
+        // posição atual do dispositivo e / ou em relação à última posição adquirida.
+        function successPosition(pos) {
+            var sp = document.createElement("p");
+            sp.innerText = "Latitude: " + pos.coords.latitude +
+                " Longitude: " + pos.coords.longitude;
+            document.getElementById("geoResults").appendChild(sp);
+        }
+
+        function errorPosition(err) {
+            var sp = document.createElement("p");
+            sp.innerText = "error: " + err.message; + " code: " + err.code;
+            document.getElementById("geoResults").appendChild(sp);
+        }
+
+
+        // XXXXXXXXXXXXXXXXXXXXXXXXXX
+        // Usando o método watchPosition
+        // XXXXXXXXXXXXXXXXXXXXXXXXXX
+        var watcher;
+        var geoLocator;
+        window.onload = function() {
+            geoLocator = window.navigator.geolocation;
+            var posOptions = {
+                enableHighAccuracy: true,
+                timeout: 45000
+            };
+            watcher = geoLocator.watchPosition(successPosition, errorPosition, posOptions);
+        }
+
+        function successPosition(pos) {
+            var sp = document.createElement("p");
+            sp.innerText = "Latitude: " + pos.coords.latitude + " Longitude: " +
+                pos.coords.longitude;
+            document.getElementById("geoResults").appendChild(sp);
+            geoLocator.clearWatch(watcher);
+        }
+
+        function errorPosition(err) {
+            var sp = document.createElement("p");
+            sp.innerText = "error: " + err.message; + " code: " + err.code;
+            document.getElementById("geoResults").appendChild(sp);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="geoResults">
+        <p>Current Location is:</p>
+    </div>
+</body>
+
+</html>
