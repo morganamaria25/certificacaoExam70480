@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exam 70-480</title>
+
+    <style type="text/css">
+        #geral {
+            margin: 0 auto;
+            width: 500px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+        #boxConteudo{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="geral">
+        <input type="submit" onclick="globalNamespace()" value="Global Namespace" />
+        
+        <div id="boxConteudo"> </div>
+    </div>
+
+
+    <!-- Ao criar os objetos dessa maneira, você pode estar razoavelmente certo de que, 
+    se outro desenvolvedor criar uma biblioteca útil para gerenciar os livros que 
+    você deseja incluir no seu site, você não precisará se preocupar com uma colisão 
+    de nomes entre os objetos Livro e Autor e os fornecidos pela outra biblioteca. 
+    Ao desenvolver bibliotecas JavaScript reutilizáveis, nunca implemente seus objetos
+    no espaço para nome global. -->
+
+    <script type="text/javascript">
+        var globalNamespace = function() {
+            var com = {};
+            com.Bookstore = {};
+            com.Bookstore.Book = {
+                Exam: '70 480',
+                title: 'Anotações dos meus estudos para o exame Programming in HTML5, CSS3 & JavaScript'
+            };
+            com.Bookstore.Author = {
+                name: 'Morgana Maria',
+                resumo: 'Anotações dos meus estudos para o exame Programming in HTML5, CSS3 & JavaScript, disponível no github https://github.com/morganamaria25/certificacaoExam70480'
+            }
+            document.getElementById("boxConteudo").innerHTML =
+                (("Exam : " + com.Bookstore.Book.Exam + "<br>" +
+                        "\nTitle : " + com.Bookstore.Book.title) + "<br>" +
+                    ("\nName : " + com.Bookstore.Author.name + "<br>" +
+                        "\nResumo : " + com.Bookstore.Author.resumo));
+        }
+        // Criando os objetos dessa maneira, você pode estar razoavelmente certo de que, 
+        // se outro desenvolvedor criar uma biblioteca útil para gerenciar os livros que você deseja incluir no seu site, 
+        // não precisará se preocupar com uma colisão de nomes.
+    </script>
+</body>
+
+</html>
