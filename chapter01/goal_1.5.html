@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exam 70-480</title>
+
+    <script>
+        // Aqui está uma variável global
+        var globalVar = "global";
+        // O manipulador de eventos onload acessa o DOM 
+        // para conectar outros manipuladores de eventos.
+        window.onload = function() {
+            // E aqui uma variável interna/local
+            var localVar = "local";
+            document.getElementById("Div1").onclick = function() {
+                var insideDiv1Click = "insideDiv1";
+                alert(globalVar);
+                alert(localVar);
+                alert(insideDiv1Click);
+                // Quando esse código é executado e um usuário clica no elemento Div1, 
+                // todos os três alertas exibem com êxito o valor de cada variável, 
+                // o que significa que todos estão no escopo.
+            };
+            document.getElementById("Div2").onclick = function() {
+                alert(globalVar);
+                alert(localVar);
+                alert(insideDiv1Click);
+                // Neste caso, quando o usuário clicar na div2 o alert insideDiv1Click será indefinida
+                // Porque a variável não está no escopo.
+                // Essa variável vive apenas no manipulador Div1 onclick, portanto, está no escopo apenas
+                // enquanto essa função é executada. Este exemplo gera uma exceção indefinida quando tenta 
+                // acessar a variável insideDiv1Click.
+            };
+            document.getElementById("Div3").onclick = function() {
+                var insideDiv3 = "Div3";
+                AFunction();
+                BFunctionWithParam(insideDiv3);
+            };
+            // O método AFunction tenta acessar a variável insideDiv3. Mas, essa 
+            // variável vive apenas dentro do escopo do manipulador Div3 onclick.
+            function AFunction() {
+                var x;
+                alert(insideDiv3);
+            }
+
+            function BFunctionWithParam(p) {
+                alert(p);
+                alert(localVar);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="Div1"></div>
+        <div id="Div2"></div>
+        <div id="Div3"></div>
+    </section>
+</body>
+
+</html>

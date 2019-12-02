@@ -47,6 +47,7 @@ Adicionando ou modificando elementos HTML
 Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é sobre AppCache](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Using_the_application_cache) , [esse link é sobre Service Workers](https://developer.mozilla.org/pt-BR/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 * [Use a API de localização geográfica](https://www.w3schools.com/html/html5_geolocation.asp)
 
+**Goal 1.5 Estabelecer o escopo de objetos e variáveis**
 
 # Habilidades medidas
 
@@ -60,3 +61,4 @@ Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é 
 * [Goal 1.4: Implementar APIs HTML5](./chapter01/goal_1.4.html)
 * [Goal 1.4: Using AppCache Manifest](./chapter01/goal_1.4_b_Using_AppCache_manifest.html) e [Aqui é o arquivo de manifest](manifest.appcache)
 * [Goal 1.4: Using the Geolocation API](./chapter01/goal_1.4_c_Using_the_Geolocation_API.html)
+* [Goal 1.5: Estabelecer o escopo de objetos e variáveis](./chapter01/goal_1.5.html)
