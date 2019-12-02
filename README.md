@@ -51,6 +51,8 @@ Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é 
 * [Estabelecer o escopo de objetos e variáveis](https://medium.com/weyes/entendendo-o-uso-de-escopo-no-javascript-3669172ca5ba)
 * [Aproveitando a palavra-chave this](https://desenvolvimentoparaweb.com/javascript/this-javascript-dominando/)
 
+**Goal 1.6 Criar e implementar objetos e métodos**
+
 
 # Habilidades medidas
 
@@ -67,3 +69,4 @@ Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é 
 * [Goal 1.5: Estabelecer o escopo de objetos e variáveis](./chapter01/goal_1.5.html)
 * [Goal 1.5: Avoiding using the global namespace](./chapter01/goal_1.5_b_Avoiding_using_the_global_namespace.html)
 * [Goal 1.5: Leveraging the this keyword](./chapter01/goal_1.5_c_Leveraging_the_this_keyword.html)
+* [ Goal 1.6: Create and implement objects and methods](./chapter01/goal_1.6.html)
