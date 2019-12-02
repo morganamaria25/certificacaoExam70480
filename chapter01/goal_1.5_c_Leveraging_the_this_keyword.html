@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exam 70-480</title>
+
+    <style type="text/css">
+      #geral {
+            margin: 0 auto;
+            width: 500px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+        #boxConteudo{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="geral">
+        <input type="submit" onclick="thisKeyword()" value="THIS KEYWORD" />
+        <div id="boxConteudo">  </div>
+    </div>
+    
+    
+    <!-- A palavra-chave this sempre se refere ao objeto que contém o código em execução no momento. 
+        Esse é o seu contexto. -->
+    <script type="text/javascript">
+        var thisKeyword = function () {
+            var exam = {
+                name: "Minhas anotações para o Exam 70-480 Programming in HTML5, CSS3 &JavaScript.",
+                getBrand: function () {
+                    var a = function () {
+                        document.getElementById("boxConteudo").innerHTML = (this.name);
+                    }.bind(this);
+                    return a();
+                }
+            };
+            exam.getBrand();
+        }
+    </script>
+</body>
+
+</html>

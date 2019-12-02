@@ -5,6 +5,11 @@
     <meta charset="utf-8" />
     <title>Exam 70-480</title>
 
+    <!-- Se você planeja usar os valores das variáveis globalVar ou localVar nos manipuladores 
+    de eventos onclick para os vários elementos div, não deve declarar nenhuma variável no 
+    nível local com o mesmo nome. As variáveis com escopo local substituem as variáveis 
+    com escopo de nível superior do mesmo nome -->
+
     <script>
         // Aqui está uma variável global
         var globalVar = "global";
@@ -39,10 +44,23 @@
             };
             // O método AFunction tenta acessar a variável insideDiv3. Mas, essa 
             // variável vive apenas dentro do escopo do manipulador Div3 onclick.
+            // Para acessar as variáveis locais declaradas no manipulador de eventos 
+            // Div3 de outra função, é preciso passá-las como parâmetros para essas funções.
             function AFunction() {
                 var x;
                 alert(insideDiv3);
             }
+            // Esta função espera um único parâmetro chamado p. 
+            // O manipulador de eventos onclick passa o valor da variável insideDiv3 
+            // para o método Agora, a variável p é uma variável local para o método BFunctionWithParam, 
+            // para que possa mostrar o valor da variável insideDiv3. Essa é a única maneira de tornar 
+            // uma variável local de uma função acessível a outra função - passando um parâmetro
+            // Em seguida, o método BFunctionWithParam tenta acessar a variável localVar. 
+            // Ele pressupõe que teria acesso, mas não pelo mesmo motivo que o método AFunction não tem 
+            // acesso à variável insideDiv3. A variável localVar é acessível apenas ao código no manipulador 
+            // de eventos onload no qual foi declarada. Para que funções fora desse escopo tenham acesso, 
+            // é necessário passá-lo como parâmetro. Mais uma coisa a considerar em relação à vida
+            // e o escopo das variáveis é hierarquia.
 
             function BFunctionWithParam(p) {
                 alert(p);

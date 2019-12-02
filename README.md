@@ -48,6 +48,9 @@ Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é 
 * [Use a API de localização geográfica](https://www.w3schools.com/html/html5_geolocation.asp)
 
 **Goal 1.5 Estabelecer o escopo de objetos e variáveis**
+* [Estabelecer o escopo de objetos e variáveis](https://medium.com/weyes/entendendo-o-uso-de-escopo-no-javascript-3669172ca5ba)
+* [Aproveitando a palavra-chave this](https://desenvolvimentoparaweb.com/javascript/this-javascript-dominando/)
+
 
 # Habilidades medidas
 
@@ -62,3 +65,5 @@ Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é 
 * [Goal 1.4: Using AppCache Manifest](./chapter01/goal_1.4_b_Using_AppCache_manifest.html) e [Aqui é o arquivo de manifest](manifest.appcache)
 * [Goal 1.4: Using the Geolocation API](./chapter01/goal_1.4_c_Using_the_Geolocation_API.html)
 * [Goal 1.5: Estabelecer o escopo de objetos e variáveis](./chapter01/goal_1.5.html)
+* [Goal 1.5: Avoiding using the global namespace](./chapter01/goal_1.5_b_Avoiding_using_the_global_namespace.html)
+* [Goal 1.5: Leveraging the this keyword](./chapter01/goal_1.5_c_Leveraging_the_this_keyword.html)
