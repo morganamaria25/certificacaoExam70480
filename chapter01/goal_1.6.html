@@ -5,11 +5,79 @@
     <meta charset="utf-8" />
     <title>Exam 70-480</title>
 
-    
+    <style type="text/css">
+        #geral {
+            margin: 0 auto;
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+        
+        #boxConteudo {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="geral">
+        <!-- Objetos Nativos -->
+        <h3>Objetos Nativos</h3>
+        <p>Objetos nativos estão disponíveis estaticamente.</p>
+        <p>Para ver o resultado <a href="" onclick="nativeObject()" value="Clique aqui">Clique aqui</a></p>
+        <br>
+        <!-- Objetos Array -->
+        <h3>Objetos Array</h3>
+        <p>Objetos como Array, é preciso criar uma instância para trabalhar com eles.</p>
+        <p>Para ver o resultado <a href="" onclick="arrayObject()" value="Clique aqui">Clique aqui</a></p>
+        <br>
+        <!-- Objetos wrapper -->
+        <h3>Objetos wrapper</h3>
+        <p>Objetos nativos estão disponíveis estaticamente.</p>
+        <p>Para ver o resultado <a href="" onclick="wrapperObject()" value="Clique aqui">Clique aqui</a></p>
 
+        <div id="boxConteudo"></div>
+    </div>
+
+
+
+    <script>
+        // Objetos nativos estão disponíveis estaticamente
+        var nativeObject = function() {
+            var squareValue = Math.sqrt(141);
+            alert(squareValue);
+        }
+
+
+        // Objetos arrays
+        //A palavra new é usada para instanciar um objeto 
+        //e informa ao tempo de execução para alocar um novo objeto do tipo especificado. 
+        //
+        //A lista após o tipo de objeto Array é chamada de construtor do objeto. 
+        //Esta informação pode ser passada para o objeto como parâmetros para construir 
+        //o estado inicial do objeto.
+        var arrayObject = function() {
+            var listofPrimeNumbers = new Array(1, 2, 3, 5, 7, 11, 13, 17, 19, 23);
+            alert(listofPrimeNumbers);
+        }
+
+
+
+        // Objetos wrapper
+        //A sintaxe se aplica a objetos nativos e objetos personalizados. 
+        //Objetos personalizados são criados pelo desenvolvedor, enquanto objetos nativos são 
+        //fornecidos pelo JavaScript principal.
+        var wrapperObject = function() {
+            //Quando uma variável é declarada assim
+            var txt = "my long string";
+            var num = 5;
+            //Você pode acessar o método na variável assim:
+            var index = txt.indexOf("long",0);
+            var exp = num.toExponential(5);
+            
+            alert(index); 
+        }
+    </script>
 </body>
 
 </html>

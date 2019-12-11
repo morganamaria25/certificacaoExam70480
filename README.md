@@ -52,8 +52,8 @@ Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é 
 * [Aproveitando a palavra-chave this](https://desenvolvimentoparaweb.com/javascript/this-javascript-dominando/)
 
 **Goal 1.6 Criar e implementar objetos e métodos**
-
-
+* [Objetos nativos JavaScript](https://www.todoespacoonline.com/w/2014/04/objetos-nativos-javascript/)
+* [Objetos](https://www.w3schools.com/js/js_object_constructors.asp)
 # Habilidades medidas
 
 ### Capítulo 1 –  Implementar e manipular estruturas e objetos do documento (20-25%)
@@ -70,3 +70,5 @@ Use a API do AppCache - Sugiro ler sobre Service Workers também. [Esse link é 
 * [Goal 1.5: Avoiding using the global namespace](./chapter01/goal_1.5_b_Avoiding_using_the_global_namespace.html)
 * [Goal 1.5: Leveraging the this keyword](./chapter01/goal_1.5_c_Leveraging_the_this_keyword.html)
 * [ Goal 1.6: Create and implement objects and methods](./chapter01/goal_1.6.html)
+* [ Goal 1.6: Creating custom objects](./chapter01/goal_1.6_b_Creating_custom_objects.html)
+
